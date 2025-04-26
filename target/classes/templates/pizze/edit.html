@@ -4,11 +4,12 @@
 <head>
     <title>Modifica Pizza</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
     <div th:replace="fragments/navbar :: navbar('pizza')"></div>
     <div class="container mt-5">
-        <h1>Modifica la pizza</h1>
+        <h1 style="color: white;">Modifica la pizza</h1>
         <form th:action="@{/pizza/edit}" th:object="${pizza}" method="post">
             <input type="hidden" th:field="*{id}">
             <div class="col-12 mb-3">
